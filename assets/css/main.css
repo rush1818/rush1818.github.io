@@ -1069,6 +1069,15 @@
 			padding-right: 0;
 		}
 
+		#languages a {
+			position: relative;
+			display: inline-block;
+			color: #ffffff;
+			width: 1em;
+			height: 1em;
+			line-height: 0.9em;
+		}
+
 /* Panels */
 
 	#main {
@@ -1315,6 +1324,92 @@
 					}
 
 						#nav a.active:after {
+							border-bottom-width: 0.5em;
+						}
+		/* Nav */
+
+			#languages {
+				text-align: center;
+				height: 4.25em;
+				cursor: default;
+			}
+
+				#languages a {
+					cursor: default;
+					font-size: 2.5em;
+					margin: 0 0.25em 0 0.25em;
+					opacity: 1;
+					outline: 0;
+					-moz-transition: opacity .25s ease-in-out;
+					-webkit-transition: opacity .25s ease-in-out;
+					-ms-transition: opacity .25s ease-in-out;
+					transition: opacity .25s ease-in-out;
+				}
+
+					#languages a:before {
+						font-size: 0.8em;
+					}
+
+					#languages a:after {
+						content: '';
+						display: block;
+						position: absolute;
+						left: 50%;
+						bottom: -0.75em;
+						margin-left: -0.5em;
+						border-bottom: solid 0em #ffffff;
+						border-left: solid 0.5em transparent;
+						border-right: solid 0.5em transparent;
+						-moz-transition: border-bottom-width .25s ease-in-out;
+						-webkit-transition: border-bottom-width .25s ease-in-out;
+						-ms-transition: border-bottom-width .25s ease-in-out;
+						transition: border-bottom-width .25s ease-in-out;
+					}
+
+					#languages a span {
+						display: block;
+						position: absolute;
+						background: #222222;
+						color: white;
+						top: -2.75em;
+						font-size: 0.3em;
+						height: 2.25em;
+						line-height: 2.25em;
+						left: 50%;
+						opacity: 0;
+						-moz-transition: opacity .25s ease-in-out;
+						-webkit-transition: opacity .25s ease-in-out;
+						-ms-transition: opacity .25s ease-in-out;
+						transition: opacity .25s ease-in-out;
+						width: 5.5em;
+						margin-left: -2.75em;
+					}
+
+						#languages a span:after {
+							content: '';
+							display: block;
+							position: absolute;
+							bottom: -0.4em;
+							left: 50%;
+							margin-left: -0.6em;
+							border-top: solid 0.6em #222222;
+							border-left: solid 0.6em transparent;
+							border-right: solid 0.6em transparent;
+						}
+
+					#languages a:hover {
+						opacity: 1.0;
+					}
+
+						#languages a:hover span {
+							opacity: 1.0;
+						}
+
+					#languages a.active {
+						opacity: 1.0;
+					}
+
+						#languages a.active:after {
 							border-bottom-width: 0.5em;
 						}
 
@@ -1584,3 +1679,7 @@
 					}
 
 	}
+
+h1, h2, h3, p{
+	cursor: default;
+}

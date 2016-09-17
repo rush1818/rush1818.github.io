@@ -51,6 +51,7 @@
 					$footer = $('#footer'),
 					$wrapper = $('#wrapper'),
 					$nav = $('#nav'), $nav_links = $nav.find('a'),
+					languages = $('#nav'), languages_links = languages.find('a'),
 					$jumplinks = $('.jumplink'),
 					$form = $('form'),
 					panels = [],
