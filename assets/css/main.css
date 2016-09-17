@@ -1375,6 +1375,7 @@
 						-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
 						-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
 						transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+						opacity: 0.1;
 					}
 
 						#me .pic .arrow:before {
@@ -1391,6 +1392,7 @@
 					#me .pic:hover .arrow {
 						width: 3em;
 						padding-right: 0.25em;
+						opacity: 0.9;
 					}
 
 				#me header {
