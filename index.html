@@ -5,202 +5,322 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-82397671-1', 'auto');
-    ga('send', 'pageview');
+<head>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  	</script>
-		<title>Rushabh Shah</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+		ga('create', 'UA-82397671-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+	<script>
+		/** @param {string} type */
+		function sendevent(type) {
+			try {
+				ga('send', 'event', 'Navigation', type);
+			} catch (e) {
+				// Do nothing
+			}
+		}
+	</script>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#skills" class="icon fa-code"><span>Skills</span></a>
-						<a href="#projects" class="icon fa-folder"><span>Projects</span></a>
-						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-					</nav>
+	<title>Rushabh Shah</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
 
-				<!-- Main -->
-					<div id="main">
+<body>
 
-						<!-- Me -->
-							<article id="me" class="panel">
-								<header>
-									<h1>Rushabh Shah</h1>
-									<p>Full-stack web developer</p>
-								</header>
-								<a href="#skills" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
+	<!-- Wrapper-->
+	<div id="wrapper">
 
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#me" class="icon fa-home active" onclick="sendevent('Home page')">
+				<span>Home</span>
+			</a>
+			<a href="#skills" class="icon fa-code" onclick="sendevent('Skills page')">
+				<span>Skills</span>
+			</a>
+			<a href="#projects" class="icon fa-folder" onclick="sendevent('Projects page')">
+				<span>Projects</span>
+			</a>
+			<a href="#contact" class="icon fa-envelope" onclick="sendevent('Contacts page')">
+				<span>Contact</span>
+			</a>
+		</nav>
 
-							<!-- Skills -->
-								<article id="skills" class="panel">
-									<header>
-										<h2>Skills</h2>
-										<p>Full-stack web developer experienced in various languages and frameworks including JavaScript, Ruby, React, Rails, and Redux.</p>
-									</header>
-									<section id='languages'>
-										<div class="row">
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/js-logo.png" alt="javascript"><span>JavaScript</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/ruby-logo.png" alt="ruby"><span>Ruby</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/react-logo.png" alt="react"><span>React</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/redux-logo.png" alt="redux"><span>Redux</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/rails-logo.png" alt="rails"><span>Rails</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/jQuery-logo.png" alt="jquery"><span>jQuery</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/HTML5-logo.png" alt="html5"><span>HTML5</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/css-logo.png" alt="css3"><span>CSS3</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/sql-logo.png" alt="sql"><span>SQL</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/Git-Icon.png" alt="git"><span>git</span></a>
-											</div>
-											<div class="1u 1u$(mobile)">
-												<a href="#" class="image fit"><img src="images/logos/rspec-logo.png" alt="rspec"><span>RSpec</span></a>
-											</div>
-										</div>
-									</section>
-								</article>
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Me -->
+			<article id="me" class="panel">
+				<header>
+					<h1>Rushabh Shah</h1>
+					<p>Full-stack web developer</p>
+				</header>
+				<a href="#skills" class="jumplink pic" onclick="sendevent('arrow')">
+					<span class="arrow icon fa-chevron-right">
+						<span>See my work</span>
+					</span>
+					<img src="images/me.jpg" alt="" />
+				</a>
+			</article>
 
 
+			<!-- Skills -->
+			<article id="skills" class="panel">
+				<header>
+					<h2>Skills</h2>
+					<p>Full-stack web developer experienced in various languages and frameworks including JavaScript, Ruby, React, Rails, and
+						Redux.
+					</p>
+				</header>
+				<section id='languages'>
+					<div class="row">
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/js-logo.png" alt="javascript">
+								<span>JavaScript</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/ruby-logo.png" alt="ruby">
+								<span>Ruby</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/react-logo.png" alt="react">
+								<span>React</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/redux-logo.png" alt="redux">
+								<span>Redux</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/rails-logo.png" alt="rails">
+								<span>Rails</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/jQuery-logo.png" alt="jquery">
+								<span>jQuery</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/HTML5-logo.png" alt="html5">
+								<span>HTML5</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/css-logo.png" alt="css3">
+								<span>CSS3</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/sql-logo.png" alt="sql">
+								<span>SQL</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/Git-Icon.png" alt="git">
+								<span>git</span>
+							</a>
+						</div>
+						<div class="1u 1u$(mobile)">
+							<a href="#" class="image fit">
+								<img src="images/logos/rspec-logo.png" alt="rspec">
+								<span>RSpec</span>
+							</a>
+						</div>
+					</div>
+				</section>
+			</article>
 
 
-						<!-- Projects -->
-							<article id="projects" class="panel">
-								<header>
-									<h2>Projects</h2>
-								</header>
-								<section>
-									<h3>Parley</h3>
-									<p style='margin-bottom: 0'>Full-Stack Messaging Web Application<a target="_blank" href="https://github.com/rush1818/parley"><img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;"></a></p>
-									<div class="row">
-										<div class="10u 12u$(mobile)">
-											<a target="_blank" href="https://github.com/rush1818/parley" class="image fit"><img src="images/projects/parley.gif" alt="parley"></a>
-										</div>
-									</div>
 
-									<h3 style='margin-top: 20px'>Sails</h3>
-									<p style='margin-bottom: 0'>MVC framework inspired by Ruby on Rails<a target="_blank" href="https://github.com/rush1818/Sails"><img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;"></a></p>
-									<div class="row">
-										<div class="10u 12u$(mobile)">
-											<a target="_blank" href="https://github.com/rush1818/Sails" class="image fit"><img src="images/projects/sails.gif" alt="sails"></a>
-										</div>
-									</div>
 
-									<h3 style='margin-top: 20px'>Bartable-Tab</h3>
-									<p style='margin-bottom: 0'>Chrome extension built using JavaScript and React to view and save Bart Schedules<a target="_blank" href="https://github.com/rush1818/bartable-tab"><img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;"></a></p>
-									<div class="row">
-										<div class="10u 12u$(mobile)">
-											<a target="_blank" href="https://github.com/rush1818/bartable-tab" class="image fit"><img src="images/projects/bartable-tab.png" alt="bartable-tab"></a>
-										</div>
-									</div>
-
-									<h3 style='margin-top: 20px'>Ingest</h3>
-									<p style='margin-bottom: 0'>Browser based game built with JavaScript and HTML5 Canvas<a target="_blank" href="https://github.com/rush1818/ingest"><img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;"></a></p>
-									<div class="row">
-										<div class="10u 12u$(mobile)">
-											<a target="_blank" href="https://github.com/rush1818/ingest" class="image fit"><img src="images/projects/ingest.gif" alt="ingest"></a>
-										</div>
-									</div>
-
-									<h3 style='margin-top: 20px'>Maze Solver</h3>
-									<p style='margin-bottom: 0'>Ruby based maze solver utilizing BFS and DFS algorithms<a target="_blank" href="https://github.com/rush1818/mazesolver"><img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;"></a></p>
-									<div class="row">
-										<div class="10u 12u$(mobile)">
-											<a target="_blank" href="https://github.com/rush1818/mazesolver" class="image fit"><img src="images/projects/maze.gif" alt="ingest"></a>
-										</div>
-									</div>
-
-								</section>
-							</article>
-
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<div id="wufoo-zj6mqei1gu6a1k">
-									Fill out my <a href="https://rush1818.wufoo.com/forms/zj6mqei1gu6a1k">online form</a>.
-								</div>
-								<script type="text/javascript">var zj6mqei1gu6a1k;(function(d, t) {
-										var s = d.createElement(t), options = {
-										'userName':'rush1818',
-										'formHash':'zj6mqei1gu6a1k',
-										'autoResize':true,
-										'height':'497',
-										'async':true,
-										'host':'wufoo.com',
-										'header':'show',
-										'ssl':true};
-										s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-										s.onload = s.onreadystatechange = function() {
-											var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-											try { zj6mqei1gu6a1k = new WufooForm();zj6mqei1gu6a1k.initialize(options);zj6mqei1gu6a1k.display(); } catch (e) {}};
-											var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-										})(document, 'script');
-									</script>
-								<header>
-									<h3>Email Me:</h3>	<p style='color: black'>contact@rushabhs.com</p>
-								</header>
-								<div class='row'>
-									<div class="1u 1u$(mobile)">
-										<a target="_blank" href="https://www.linkedin.com/in/rush1818" class="image fit"><img src="images/logos/LinkedIn-logo.png" alt="linkedin"></a>
-									</div>
-									<div class="1u 1u$(mobile)">
-										<a target="_blank" href="https://github.com/rush1818/" class="image fit"><img src="images/logos/GitHub-logo.png" alt="github"></a>
-									</div>
-								</div>
-							</article>
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li style='font-size: 5px; opacity: 0.3;'>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
+			<!-- Projects -->
+			<article id="projects" class="panel">
+				<header>
+					<h2>Projects</h2>
+				</header>
+				<section>
+					<h3>Parley</h3>
+					<p style='margin-bottom: 0'>Full-Stack Messaging Web Application
+						<a target="_blank" href="https://github.com/rush1818/parley" onclick="sendevent('Project - parley')">
+							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+						</a>
+					</p>
+					<div class="row">
+						<div class="10u 12u$(mobile)">
+							<a target="_blank" href="https://github.com/rush1818/parley" class="image fit">
+								<img src="images/projects/parley.gif" alt="parley">
+							</a>
+						</div>
 					</div>
 
+					<h3 style='margin-top: 20px'>Sails</h3>
+					<p style='margin-bottom: 0'>MVC framework inspired by Ruby on Rails
+						<a target="_blank" href="https://github.com/rush1818/Sails" onclick="sendevent('Project - Sails')">
+							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+						</a>
+					</p>
+					<div class="row">
+						<div class="10u 12u$(mobile)">
+							<a target="_blank" href="https://github.com/rush1818/Sails" class="image fit">
+								<img src="images/projects/sails.gif" alt="sails">
+							</a>
+						</div>
+					</div>
+
+					<h3 style='margin-top: 20px'>Bartable-Tab</h3>
+					<p style='margin-bottom: 0'>Chrome extension built using JavaScript and React to view and save Bart Schedules
+						<a target="_blank" href="https://github.com/rush1818/bartable-tab" onclick="sendevent('Project - BartableTab')">
+							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+						</a>
+					</p>
+					<div class="row">
+						<div class="10u 12u$(mobile)">
+							<a target="_blank" href="https://github.com/rush1818/bartable-tab" class="image fit">
+								<img src="images/projects/bartable-tab.png" alt="bartable-tab">
+							</a>
+						</div>
+					</div>
+
+					<h3 style='margin-top: 20px'>Ingest</h3>
+					<p style='margin-bottom: 0'>Browser based game built with JavaScript and HTML5 Canvas
+						<a target="_blank" href="https://github.com/rush1818/ingest" onclick="sendevent('Project - Ingest')">
+							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+						</a>
+					</p>
+					<div class="row">
+						<div class="10u 12u$(mobile)">
+							<a target="_blank" href="https://github.com/rush1818/ingest" class="image fit">
+								<img src="images/projects/ingest.gif" alt="ingest">
+							</a>
+						</div>
+					</div>
+
+					<h3 style='margin-top: 20px'>Maze Solver</h3>
+					<p style='margin-bottom: 0'>Ruby based maze solver utilizing BFS and DFS algorithms
+						<a target="_blank" href="https://github.com/rush1818/mazesolver" onclick="sendevent('Project - MazeSolver')">
+							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+						</a>
+					</p>
+					<div class="row">
+						<div class="10u 12u$(mobile)">
+							<a target="_blank" href="https://github.com/rush1818/mazesolver" class="image fit">
+								<img src="images/projects/maze.gif" alt="ingest">
+							</a>
+						</div>
+					</div>
+
+				</section>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact" class="panel">
+				<div id="wufoo-zj6mqei1gu6a1k">
+					Fill out my
+					<a href="https://rush1818.wufoo.com/forms/zj6mqei1gu6a1k">online form</a>.
+				</div>
+				<script type="text/javascript">
+					var zj6mqei1gu6a1k;
+					(function (d, t) {
+						var s = d.createElement(t),
+							options = {
+								'userName': 'rush1818',
+								'formHash': 'zj6mqei1gu6a1k',
+								'autoResize': true,
+								'height': '497',
+								'async': true,
+								'host': 'wufoo.com',
+								'header': 'show',
+								'ssl': true
+							};
+						s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+						s.onload = s.onreadystatechange = function () {
+							var rs = this.readyState;
+							if (rs)
+								if (rs != 'complete')
+									if (rs != 'loaded') return;
+							try {
+								zj6mqei1gu6a1k = new WufooForm();
+								zj6mqei1gu6a1k.initialize(options);
+								zj6mqei1gu6a1k.display();
+							} catch (e) {}
+						};
+						var scr = d.getElementsByTagName(t)[0],
+							par = scr.parentNode;
+						par.insertBefore(s, scr);
+					})(document, 'script');
+				</script>
+				<header>
+					<h3>Email Me:</h3>
+					<p style='color: black'>contact@rushabhs.com</p>
+				</header>
+				<div class='row'>
+					<div class="1u 1u$(mobile)">
+						<a target="_blank" href="https://www.linkedin.com/in/rush1818" class="image fit">
+							<img src="images/logos/LinkedIn-logo.png" alt="linkedin">
+						</a>
+					</div>
+					<div class="1u 1u$(mobile)">
+						<a target="_blank" href="https://github.com/rush1818/" class="image fit">
+							<img src="images/logos/GitHub-logo.png" alt="github">
+						</a>
+					</div>
+				</div>
+			</article>
+
+			<!-- Footer -->
+			<div id="footer">
+				<ul class="copyright">
+					<li style='font-size: 5px; opacity: 0.3;'>Design:
+						<a href="http://html5up.net">HTML5 UP</a>
+					</li>
+				</ul>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		</div>
 
-	</body>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/skel-viewport.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
