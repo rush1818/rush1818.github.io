@@ -7,28 +7,22 @@
 <html>
 
 <head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEZ1QX8KBK"></script>
 	<script>
-		(function (i, s, o, g, r, a, m) {
-			i['GoogleAnalyticsObject'] = r;
-			i[r] = i[r] || function () {
-				(i[r].q = i[r].q || []).push(arguments)
-			}, i[r].l = 1 * new Date();
-			a = s.createElement(o),
-				m = s.getElementsByTagName(o)[0];
-			a.async = 1;
-			a.src = g;
-			m.parentNode.insertBefore(a, m)
-		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-		ga('create', 'UA-82397671-1', 'auto');
-		ga('send', 'pageview');
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-TEZ1QX8KBK');
 	</script>
 
 	<script>
 		/** @param {string} type */
 		function sendevent(type) {
 			try {
-				ga('send', 'event', 'Navigation', type);
+				gtag('event', 'Navigation', {
+					'event_label': type,
+				});
 			} catch (e) {
 				// Do nothing
 			}
@@ -89,7 +83,8 @@
 			<article id="skills" class="panel">
 				<header>
 					<h2>Skills</h2>
-					<p>Full-stack web developer experienced in various languages and frameworks including JavaScript, Ruby, React, Rails, and
+					<p>Full-stack web developer experienced in various languages and frameworks including JavaScript, Ruby, React,
+						Rails, and
 						Redux.
 					</p>
 				</header>
@@ -177,7 +172,8 @@
 					<h3>Parley</h3>
 					<p style='margin-bottom: 0'>Full-Stack Messaging Web Application
 						<a target="_blank" href="https://github.com/rush1818/parley" onclick="sendevent('Project - parley')">
-							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+							<img src="images/logos/GitHub-logo.png" alt="github"
+								style="width: 30px; float: right; margin-right: 0px;">
 						</a>
 					</p>
 					<div class="row">
@@ -191,7 +187,8 @@
 					<h3 style='margin-top: 20px'>Sails</h3>
 					<p style='margin-bottom: 0'>MVC framework inspired by Ruby on Rails
 						<a target="_blank" href="https://github.com/rush1818/Sails" onclick="sendevent('Project - Sails')">
-							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+							<img src="images/logos/GitHub-logo.png" alt="github"
+								style="width: 30px; float: right; margin-right: 0px;">
 						</a>
 					</p>
 					<div class="row">
@@ -204,8 +201,10 @@
 
 					<h3 style='margin-top: 20px'>Bartable-Tab</h3>
 					<p style='margin-bottom: 0'>Chrome extension built using JavaScript and React to view and save Bart Schedules
-						<a target="_blank" href="https://github.com/rush1818/bartable-tab" onclick="sendevent('Project - BartableTab')">
-							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+						<a target="_blank" href="https://github.com/rush1818/bartable-tab"
+							onclick="sendevent('Project - BartableTab')">
+							<img src="images/logos/GitHub-logo.png" alt="github"
+								style="width: 30px; float: right; margin-right: 0px;">
 						</a>
 					</p>
 					<div class="row">
@@ -219,7 +218,8 @@
 					<h3 style='margin-top: 20px'>Ingest</h3>
 					<p style='margin-bottom: 0'>Browser based game built with JavaScript and HTML5 Canvas
 						<a target="_blank" href="https://github.com/rush1818/ingest" onclick="sendevent('Project - Ingest')">
-							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+							<img src="images/logos/GitHub-logo.png" alt="github"
+								style="width: 30px; float: right; margin-right: 0px;">
 						</a>
 					</p>
 					<div class="row">
@@ -232,8 +232,10 @@
 
 					<h3 style='margin-top: 20px'>Maze Solver</h3>
 					<p style='margin-bottom: 0'>Ruby based maze solver utilizing BFS and DFS algorithms
-						<a target="_blank" href="https://github.com/rush1818/mazesolver" onclick="sendevent('Project - MazeSolver')">
-							<img src="images/logos/GitHub-logo.png" alt="github" style="width: 30px; float: right; margin-right: 0px;">
+						<a target="_blank" href="https://github.com/rush1818/mazesolver"
+							onclick="sendevent('Project - MazeSolver')">
+							<img src="images/logos/GitHub-logo.png" alt="github"
+								style="width: 30px; float: right; margin-right: 0px;">
 						</a>
 					</p>
 					<div class="row">
@@ -277,7 +279,7 @@
 								zj6mqei1gu6a1k = new WufooForm();
 								zj6mqei1gu6a1k.initialize(options);
 								zj6mqei1gu6a1k.display();
-							} catch (e) {}
+							} catch (e) { }
 						};
 						var scr = d.getElementsByTagName(t)[0],
 							par = scr.parentNode;
